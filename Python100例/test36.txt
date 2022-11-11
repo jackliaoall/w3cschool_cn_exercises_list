@@ -1,0 +1,55 @@
+Python 练习实例36
+ Python 100例
+题目：求100之内的素数。
+程序分析：无。
+程序源代码：
+
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+
+from math import sqrt
+if __name__ == '__main__':
+    N = 100
+    a = range(0,N)
+    for i in range(2,int(sqrt(N))):
+        for j in range(i + 1,N):
+            if (a[i] != 0) and (a[j] != 0):
+                if a[j] % a[i] == 0:
+                    a[j] = 0
+    print
+    for i in range(2,N):
+        if a[i] != 0:
+            print "%5d" % a[i]
+            if (i - 2) % 10 == 0:
+                print
+
+以上实例输出结果为：
+
+    2
+
+    3
+    5
+    7
+   11
+   13
+   17
+   19
+   23
+   29
+   31
+   37
+   41
+   43
+   47
+   53
+   59
+   61
+   67
+   71
+   73
+   79
+   83
+   89
+   97
+ Python 100例
+

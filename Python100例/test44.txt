@@ -1,0 +1,15 @@
+Python 练习实例44
+ Python 100例
+题目：学习使用external的用法。。
+程序分析：无
+程序源代码：
+
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+
+import external
+if __name__ == '__main__':
+    print external.add(10,20)
+
+ Python 100例
+

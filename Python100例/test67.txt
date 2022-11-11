@@ -1,0 +1,70 @@
+Python 练习实例67
+ Python 100例
+题目：输入数组，最大的与第一个元素交换，最小的与最后一个元素交换，输出数组。
+程序分析：无。
+程序源代码：
+
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+
+def inp(numbers):
+    for i in range(9):
+        numbers.append(int(raw_input('input a number:\n')))
+    numbers.append(int(raw_input('input a number:\n')))
+p = 0
+def max_min(array):
+    max = min = 0
+    for i in range(1,len(array) - 1):
+        p = i
+        if array[p] > array[max] : max = p
+        elif array[p] < array[min] : min = p
+    k = max
+    l = min
+    array[0],array[l] = array[l],array[0]
+    array[9],array[k] = array[k],array[9]
+
+def outp(numbers):
+    for i  in range(len(numbers)):
+        print numbers[i]
+
+if __name__ == '__main__':
+    array = []
+    inp(array)
+    max_min(array)
+    outp(array)
+
+以上实例输出结果为：
+
+input a number:
+6
+input a number:
+8
+input a number:
+3
+input a number:
+6
+input a number:
+4
+input a number:
+9
+input a number:
+334
+input a number:
+34
+input a number:
+23
+input a number:
+12
+3
+8
+6
+6
+4
+9
+12
+34
+23
+334
+
+ Python 100例
+
