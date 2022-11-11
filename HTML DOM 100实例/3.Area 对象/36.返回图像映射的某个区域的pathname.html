@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<img src="/statics/images/course/planets.gif"
+width="145" height="126"
+usemap="#planetmap">
+
+<map name="planetmap">
+<area id="venus" shape="circle"
+coords="124,58,8"
+alt="Venus"
+href="venus.htm">
+</map>
+
+<p>金星区域的路径:
+<script>
+document.write(document.getElementById('venus').pathname);
+</script>
+</p>
+
+<p><b>注意:</b> IE和Opera浏览器返回 &quot;jsref/venus.htm&quot;, 
+而Firefox, Chrome, 和 Safari浏览器返回 &quot;/jsref/venus.htm&quot;.</p>
+
+</body>
+</html>

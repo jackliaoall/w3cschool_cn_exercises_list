@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function getOptions(){
+	var x=document.getElementById("mySelect");
+	var txt="所有选项: ";
+	var i;
+	for (i=0;i<x.length;i++){
+		txt=txt + "\n" + x.options[i].text;
+	}
+	alert(txt);
+}
+</script>
+</head>
+<body>
+
+<form>
+你喜欢的水果是：
+<select id="mySelect">
+  <option>苹果</option>
+  <option>橙子</option>
+  <option>菠萝</option>
+  <option>香蕉</option>
+</select>
+<br><br>
+<input type="button" onclick="getOptions()" value="输出所有选项">
+</form>
+	
+</body>
+</html>

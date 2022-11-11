@@ -1,0 +1,1 @@
+https://www.w3cschool.cn/htmldom/htmldom-examples.html

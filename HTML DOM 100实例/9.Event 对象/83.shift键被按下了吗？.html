@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function isKeyPressed(event)
+{
+if (event.shiftKey==1)
+  {
+  alert(" shift 键被按下!");
+  }
+else
+  {
+  alert(" shift 键没被按下!");
+  }
+}
+</script>
+</head>
+
+<body onmousedown="isKeyPressed(event)">
+
+<p>点击该段落，尝试按下或者不按下shift 键的效果。</p>
+
+</body>
+</html>

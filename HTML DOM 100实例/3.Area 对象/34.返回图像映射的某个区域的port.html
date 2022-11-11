@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<img src="/statics/images/course/planets.gif" 
+width="145" height="126"
+usemap="#planetmap">
+
+<map name="planetmap">
+<area id="venus" shape="circle"
+coords="124,58,8"
+alt="Venus"
+href="venus.htm">
+</map>
+
+<p>“金星”区域的port:
+<script>
+document.write(document.getElementById('venus').port);
+</script>
+</p>
+
+<p><b>注意:</b>如果没有指定端口部分的URL,或者是80(默认),一些浏览器会显示0或什么都没有。</p>
+
+</body>
+</html>
